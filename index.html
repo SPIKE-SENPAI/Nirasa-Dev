@@ -1,0 +1,144 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontak Developer</title>
+  <style>
+    :root{
+      --bg: #f0fdf4;          /* hijau muda putih */
+      --card: #ffffff;        /* putih */
+      --muted: #065f46;       /* hijau tua */
+      --text: #064e3b;        /* hijau gelap */
+      --accent1: #34d399;     /* hijau emerald */
+      --accent2: #10b981;     /* hijau */
+      --ring: rgba(16,185,129,.35);
+      --grad1: #10b981;       /* emerald */
+      --grad2: #f0fdf4;       /* putih kehijauan */
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial;
+      color:var(--text); background:
+        linear-gradient(135deg, var(--grad1), var(--grad2));
+    }
+    .wrap{max-width:1100px; margin:0 auto; padding:40px 20px 80px}
+    .header{display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:28px}
+    .title{font-size:clamp(1.25rem, 2.5vw, 1.75rem); font-weight:800; letter-spacing:.4px}
+    .subtitle{color:var(--muted); font-size:clamp(.95rem, 2vw, 1.05rem)}
+    .grid{display:grid; grid-template-columns:repeat(1,minmax(0,1fr)); gap:22px}
+    @media(min-width:720px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}.card{
+  position:relative; border-radius:20px; padding:22px; background:linear-gradient(135deg, rgba(255,255,255,.9), rgba(240,253,244,.9));
+  backdrop-filter: blur(6px); border:1px solid rgba(16,185,129,.25);
+  box-shadow: 0 12px 30px rgba(16,185,129,.2), inset 0 1px 0 rgba(255,255,255,.4);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.card:hover{ transform: translateY(-4px); box-shadow: 0 18px 40px rgba(16,185,129,.35); border-color: rgba(16,185,129,.5); }
+
+.row{display:flex; align-items:center; gap:16px}
+.avatar{
+  width:68px; height:68px; border-radius:18px; overflow:hidden; flex:0 0 auto; position:relative; background:linear-gradient(135deg, var(--grad1), var(--grad2));
+  box-shadow: inset 0 0 0 3px rgba(255,255,255,.3), 0 6px 24px rgba(16,185,129,.2);
+}
+.avatar img{width:100%; height:100%; object-fit:cover; display:block; mix-blend:overlay; opacity:.9}
+
+.name{font-weight:800; font-size:1.1rem}
+.role{color:var(--muted); font-size:.95rem}
+
+.meta{display:grid; grid-template-columns: 1fr; gap:8px; margin-top:14px; color:var(--muted); font-size:.95rem}
+.meta div{display:flex; align-items:center; gap:10px}
+
+.badge{display:inline-flex; align-items:center; gap:8px; padding:6px 10px; border-radius:999px; font-size:.85rem;
+  background:linear-gradient(135deg, rgba(16,185,129,.15), rgba(240,253,244,.7)); border:1px solid rgba(16,185,129,.25)}
+
+.btns{display:flex; flex-wrap:wrap; gap:10px; margin-top:18px}
+.btn{ --bgbtn: rgba(16,185,129,.1);
+  display:inline-flex; align-items:center; gap:10px; padding:12px 14px; border-radius:14px; text-decoration:none; color:var(--text);
+  background: var(--bgbtn); border:1px solid rgba(16,185,129,.25); font-weight:700; letter-spacing:.2px;
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease;
+}
+.btn:hover{ transform: translateY(-2px); box-shadow: 0 10px 18px rgba(16,185,129,.35); border-color: rgba(16,185,129,.4)}
+.btn:focus{ outline:none; box-shadow: 0 0 0 6px var(--ring)}
+.btn.ig{ --bgbtn: linear-gradient(135deg, rgba(16,185,129,.2), rgba(240,253,244,.9)); }
+.btn.wa{ --bgbtn: linear-gradient(135deg, rgba(240,253,244,.9), rgba(16,185,129,.2)); }
+.btn svg{width:20px; height:20px}
+
+.footer{
+  margin-top:32px; font-size:.92rem; color:var(--muted);
+  display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px
+}
+.pill{
+  padding:8px 12px; border-radius:999px; background:linear-gradient(135deg, rgba(16,185,129,.3), rgba(240,253,244,.9));
+  border:1px solid rgba(16,185,129,.25)
+}
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div>
+        <div class="title">👨‍💻 Kontak Developer</div>
+        <div class="subtitle">Hubungi developer web ini melalui Instagram atau WhatsApp. Klik tombol di bawah tiap kartu.</div>
+      </div>
+      <div class="pill">Siap kolaborasi 🚀</div>
+    </header><section class="grid">
+  <!-- Developer 1 -->
+  <article class="card">
+    <div class="row">
+      <div class="avatar">
+        <img src="https://scontent.cdninstagram.com/v/t51.2885-19/491502706_662844259868099_5315966825229298241_n.jpg?stp=dst-jpg_s240x240_tt6&_nc_cat=106&ccb=1-7&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=ojtnynrYtDAQ7kNvwExWFv3&_nc_oc=AdngFlVYTQcNQM1MBo-N8AbJv7uEqU5cevdlenA6CA-5b4K-QrWBcV7byT0FwDmnlPOUxFNXx5EJiYaqfSYgc2kW&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&oh=00_AfVe4BVovnd4kxd43fXDSKPWauMeg3QsZIgh0gzYgIcApw&oe=68B1B79B" alt="Foto Developer 1">
+      </div>
+      <div>
+        <div class="name">Ramadhani Khoirul A.</div>
+        <div class="role">Front-End Engineer • UI/UX Designer</div>
+      </div>
+    </div>
+
+    <div class="meta">
+      <div></div>
+      <div>📱 +62 859-3566-0706</div>
+      <div>📍Magelang, Indonesia</div>
+      <div class="badge">👾 UI Designer • UI Engineer • C# </div>
+    </div>
+
+    <div class="btns">
+      <a class="btn ig" target="_blank" href="https://www.instagram.com/__ramkh__?igsh=YWNkYXhrOGJ3NjJj">Instagram</a>
+      <a class="btn wa" target="_blank" href="https://wa.me/6285935660706?text=Halo%20Ramadhani">WhatsApp</a>
+    </div>
+  </article>
+
+  <!-- Developer 2 -->
+  <article class="card">
+    <div class="row">
+      <div class="avatar">
+        <img src="https://i.ibb.co.com/sX9rJfx/Screenshot-2025-07-31-13-11-57-531-com-whatsapp.png" alt="Screenshot-2025-07-31-13-11-57-531-com-whatsapp">
+      </div>
+      <div>
+        <div class="name">M. Fatih Izzul Hikam</div>
+        <div class="role">Full Stack developer • Back-end Engineer</div>
+      </div>
+    </div>
+
+    <div class="meta">
+      <div>📧 muhammadfatihizzulhikam@gmail.com</div>
+      <div>📱 +62 821 3886 0202</div>
+      <div>📍 Temanggung, Indonesia</div>
+      <div class="badge">🛠️ Node.js • Html • C#</div>
+    </div>
+
+    <div class="btns">
+      <a class="btn ig" target="_blank" href="https://instagram.com/mr_sanszz">Instagram</a>
+      <a class="btn wa" target="_blank" href="https://wa.me/6282138860202?text=Halo%20Hikam">WhatsApp</a>
+    </div>
+  </article>
+</section>
+
+<footer class="footer">
+  <span></span>
+  <span>© 2025 Nirasa Corporation</span>
+</footer>
+
+  </div>
+</body>
+</html>
